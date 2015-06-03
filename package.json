@@ -1,0 +1,19 @@
+{
+  "name": "gh-popular-words",
+  "version": "0.0.1",
+  "description": "Show popular words from descriptions of user repositories",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "github",
+    "words",
+    "popular"
+  ],
+"dependencies": {
+    "github-repositories": "^1.1.2"
+  },  
+  "author": "Sergey Romanov <xxsmotur@gmail.com> (https://github.com/saromanov)",
+  "license": "MIT"
+}
