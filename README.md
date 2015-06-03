@@ -9,19 +9,23 @@ Get sorted list of popular words from descriptions of repositories
 ## Usage
 
 ```javascript
-var gpw = require('./gh-popular-words');
-gpw('saromanov', {limit: 5, stopwords: ['for', 'with', 'and', 'the', 'from']}, function(err, data){
+var gpw = require('gh-popular-words');
+var opts = {limit: 5, stopwords: ['for', 'with', 'and', 'the', 'from']};
+gpw('saromanov', opts , function(err, data){
    console.log(data);
-   /*[ { word: 'implementation', count: 13 },
+});
+```
+Output will be
+```
+[ { word: 'implementation', count: 13 },
   { word: 'python', count: 5 },
   { word: 'learning', count: 5 },
   { word: 'simple', count: 4 },
   { word: 'experiments', count: 4 } ]
-  */
-});
+  
 ```
 
-or just as
+or just with
 ```javascript
 var gpw = require('./gh-popular-words');
 gpw('saromanov', function(err, data){
