@@ -1,6 +1,6 @@
 {
   "name": "gh-popular-words",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Show popular words from descriptions of user repositories",
   "main": "index.js",
   "scripts": {
