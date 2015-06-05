@@ -9,6 +9,7 @@ module.exports = function(user, opts, cb) {
 
     var limit = opts.limit || -1;
     var stopwords = opts.stopwords || [];
+    var minwordlength = opts.minwordlength || 2;
     githubRepos(user, function(err, data) {
 
         if (err) {
@@ -22,7 +23,7 @@ module.exports = function(user, opts, cb) {
                 break;
             }
             data[i].description.split(' ').forEach(function(word) {
-                if (word.length > 2 && stopwords.indexOf(word) === -1) {
+                if (word.length > minwordlength && stopwords.indexOf(word) === -1) {
                     word = word.toLowerCase();
                     if (!(word in words)) {
                         words[word] = 1;
