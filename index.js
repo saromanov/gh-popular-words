@@ -18,6 +18,9 @@ module.exports = function(user, opts, cb) {
 
         var words = {};
         for (var i = 0; i < data.length; ++i) {
+            if (data[i].description == null) {
+                break;
+            }
             data[i].description.split(' ').forEach(function(word) {
                 if (word.length > 2 && stopwords.indexOf(word) === -1) {
                     word = word.toLowerCase();
