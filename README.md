@@ -3,14 +3,14 @@ Get sorted list of popular words from descriptions of repositories
 
 ## Install
 
-```$ npm install gh-popular-words```
+```$ npm install -g gh-popular-words```
 
 
 ## Usage
 
 ```javascript
 var gpw = require('gh-popular-words');
-var opts = {limit: 5, stopwords: ['for', 'with', 'and', 'the', 'from']};
+var opts = {limit: 5, stopwords: ['for', 'with', 'and', 'the', 'from'], minwordlength: 5};
 gpw('saromanov', opts , function(err, data){
    console.log(data);
 });

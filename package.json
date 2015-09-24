@@ -1,7 +1,8 @@
 {
   "name": "gh-popular-words",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Show popular words from descriptions of user repositories",
+  "repository": "saromanov/gh-popular-words",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
