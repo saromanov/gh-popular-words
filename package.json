@@ -13,7 +13,7 @@
     "popular"
   ],
 "dependencies": {
-    "github-repositories": "^1.1.2"
+    "github-repositories": "^2.0.0"
   },  
   "author": "Sergey Romanov <xxsmotur@gmail.com> (https://github.com/saromanov)",
   "license": "MIT"
